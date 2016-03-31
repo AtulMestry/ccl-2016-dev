@@ -3,10 +3,10 @@
 	<link rel="stylesheet" href="../../styles/style.css">
 	<link rel="stylesheet" href="../../styles/global.css">
 <link rel="stylesheet" href="../../styles/team-profile.css">
-	
+
 	<template>
 	<iron-ajax auto url="../../model/players.php?teamid={{teamid}}" handle-as="json" last-response="{{ players }}"></iron-ajax>
-	
+
 		<!--<div id="teams-container">
 			<ul  class="nav nav-tabs" >--
 			<tr>
@@ -31,7 +31,7 @@
  					<div class="loadAnimate"></div>
  					</div>
  				</div>
- 				<img src="{{player.photo}}">
+ 				<img src="{{player.photo}}" width="100" height="100">
  					<span><i>{{player.firstname}}</i>{{player.lastname}}</span>
  			</a>
  			<div class="split">split</div>
